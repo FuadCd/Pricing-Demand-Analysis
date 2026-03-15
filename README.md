@@ -5,8 +5,6 @@ This project digs into a practical question retailers and marketplaces care abou
 
 Using the **Kaggle Amazon Sales Dataset** (about 1,400+ product listings), the analysis looks at how **discount level**, **price**, and **product ratings** relate to **consumer demand**. Because the dataset doesn’t include actual units sold, the number of **product reviews** is used as a reasonable proxy for demand.
 
-The work was completed for **BUEC 420 – Data Science and Business Economics** and is implemented in a single notebook: `pricing_demand_analysis.ipynb`.
-
 
 ---
 
@@ -93,77 +91,8 @@ The notebook follows a clear step‑by‑step workflow:
 
 ---
 
-## 4. How to Run the Notebook
-
-### Requirements
-
-You’ll need a fairly standard Python data stack:
-
-- **Python 3.8+** (any modern 3.x version should be fine)
-- **Packages**:
-  - `pandas`
-  - `numpy`
-  - `matplotlib`
-  - `seaborn`
-  - `statsmodels`
-  - `jupyter` (or any environment that runs `.ipynb` notebooks)
-
-You can install everything with:
-
-```bash
-pip install pandas numpy matplotlib seaborn statsmodels jupyter
-```
-
-### Steps to run
-
-1. **Clone or download** this repository into a local folder.
-2. Make sure the **Kaggle Amazon Sales dataset** file used in the notebook is present in the expected path (or adjust the file path in the first data‑loading cell).
-3. From the repository root, launch Jupyter:
-
-```bash
-jupyter notebook
-```
-
-4. Open `pricing_demand_analysis.ipynb`.
-5. Run the cells in order from top to bottom.  
-   The notebook is already structured so that each “Step” builds on the previous one.
-
-
----
-
-## 5. Repository Structure
-
-At minimum, the repo includes:
-
-- `pricing_demand_analysis.ipynb` – main analysis notebook
-- (Optional, depending on how you organize it) Raw or cleaned data files referenced in the notebook
-- `README.md` – this file
-
-
----
-
-## 6. Interpretation and Use
-
-This project is best thought of as a **course term paper translated into code**:
-
-- It’s **exploratory and empirical**, not a production system.
-- The findings are **conditional on this specific Kaggle dataset**, with its own limitations (e.g., using review counts as a proxy for demand).
-- The main value is in **demonstrating how to go from raw e‑commerce data → cleaned features → regression models → business insights**.
-
-If you want to extend the work, some natural next steps are:
-
-- Re‑run the analysis on a dataset that includes **actual sales quantities**.
-- Test **alternative demand proxies** (e.g., sales rank or time‑series data if available).
-- Try **non‑linear or machine learning models** to capture more complex relationships between discounts, price, ratings, and demand.
-
-
----
-
-## 7. Credits
+## 4. Credits
 
 - **Author**: Muhtasim Fuad Chowdhury  
-- **Course**: BUEC 420 – Data Science and Business Economics  
 - **Data**: Kaggle Amazon Sales Dataset
-
-If you’re reading this as a reviewer or instructor, the best place to start is simply opening the notebook and stepping through the seven labeled sections—each one is written to be readable without needing to dig into the raw code too much.
 
